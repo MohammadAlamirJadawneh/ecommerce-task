@@ -1,0 +1,23 @@
+<div class="col-md-12">
+    <p>Add New Product</p>
+</div>
+<label>Product Name: </label>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<input type="text" class="form-control" [(ngModel)]="newProductName">
+<br>
+<label>Product Price:</label>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="text" class="form-control" [(ngModel)]="newProductPrice">
+<br>
+<label>Product Description:</label>
+&nbsp;
+<input type="text" class="form-control" [(ngModel)]="newProductDescription">
+<br>
+<label>Product Image:</label>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<input type="text" class="form-control" [(ngModel)]="newProductImage">
+<br>
+<button class="btn btn-primary" (click)="onProductAdd()">
+    Add Product
+</button>
+<br><br><br><br><br><br><br>

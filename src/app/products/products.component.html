@@ -1,0 +1,20 @@
+ 
+
+  <div class="col-md-4 mb-4">
+    <div class="card">
+        <h5 class="card-title ">{{Products.Name}} </h5>
+        @if(Products.Image){
+        <img [src]="Products.Image"   class="card-img-top" alt="Imageproduct">
+        }
+        @else{
+        <h1>No Image Found</h1>
+        }
+        <div class="card-body">
+            <div class="card-text">
+                {{Products.Description}}
+            </div>
+        </div>
+        <h3 class="btn btn-success">{{Products.Price}}</h3>
+        <button class="btn btn-primary" (click)="onProductView()">View Product</button>
+    </div>
+</div>  
